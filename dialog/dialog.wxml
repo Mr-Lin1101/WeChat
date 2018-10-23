@@ -1,0 +1,13 @@
+<!--components/dialog/dialog.wxml-->
+<view class='mask' wx:if='{{isShow}}'>
+  <view class='modal'>
+    <view class='modal_body'>
+      <image class='icon_success' src='{{picture}}' mode='aspectFit' />
+      <text>{{content}}</text>
+    </view>
+    <view class='modal_footer'>
+      <view class='modal_btn modal_btn_cancel' catchtap='_cancelEvent'>{{cancelText}}</view>
+      <view class='modal_btn modal_btn_confirm' catchtap='_confirmEvent'>{{confirmText}}</view>
+    </view>
+  </view>
+</view>
